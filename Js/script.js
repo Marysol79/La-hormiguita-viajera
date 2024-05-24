@@ -1,29 +1,31 @@
-// scripts.js
-document.addEventListener('DOMContentLoaded', function() {
-    const slides = document.querySelector('.slides');
-    const slide = document.querySelectorAll('.slide');
-    const prevButton = document.querySelector('.prev');
-    const nextButton = document.querySelector('.next');
-    let currentIndex = 0;
-    const totalSlides = slide.length;
+let currentSlide = 0;
 
-    function updateSlidePosition() {
-        slides.style.transform = `translateX(-${currentIndex * 100}%)`;
-    }
+function moveSlide(direction) {
+const slides = document.querySelectorAll('.parrafoCliente');
+const totalSlides = slides.length;
+currentSlide += direction;
 
-    function showNextSlide() {
-        currentIndex = (currentIndex + 1) % totalSlides;
-        updateSlidePosition();
-    }
+if (currentSlide < 0) {
+    currentSlide = totalSlides - 1;
+} else if (currentSlide >= totalSlides) {
+    currentSlide = 0;
+}
 
-    function showPrevSlide() {
-        currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
-        updateSlidePosition();
-    }
+  const newTransformValue = -currentSlide * 100;
+document.querySelector('.clientes').style.transform = `translateX(${newTransformValue}%)`;
+}
 
-    prevButton.addEventListener('click', showPrevSlide);
-    nextButton.addEventListener('click', showNextSlide);
+document.addEventListener("DOMContentLoaded", function () {
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animado');
+        observer.unobserve(entry.target);
+      }
+    });
+  });
 
-    // Cambiar de diapositiva cada 3 segundos
-    setInterval(showNextSlide, 3000);
+  document.querySelectorAll('.animar').forEach(element => {
+    observer.observe(element);
+  });
 });

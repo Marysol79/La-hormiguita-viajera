@@ -759,13 +759,7 @@ font-size: 16px;
 font-weight: normal;
 }
 
-.error-message{
-  width: 30%;
-  background-color: bisque;
-  color: rgb(125, 85, 211);
-  border-radius: 0.5rem;
-  box-shadow: 0.25rem 0.25rem 0.5px darkblue;
-}
+
 .success-animation {
   animation: fadeIn 3s ease-in-out forwards;
   background-color: #074173; 
@@ -780,21 +774,7 @@ font-weight: normal;
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
-@media (max-width: 576px) {
-  .containerForm {
-      order: 1; 
-  }
-  .containerInfo {
-      order: 2; 
-  }
-}
 
-@media (min-width: 577px) and (max-width: 768px) {
-  .container1,
-  .container2 {
-      background-color: #9AC8CD;
-}
-}
 
 /* VUELOS */
 .subtitulos {
@@ -1035,10 +1015,14 @@ font-weight: normal;
 }
 
 .error-message {
+  
   color: red;
   margin: 20px auto;
-  width: 15rem;
+  width: max-content;
   padding: 0px 2px;
+  background-color: bisque;
+  border-radius: 0.5rem; 
+  display:inline-block ;
 }
 
 #loginForm a, #registerForm a {
@@ -1092,6 +1076,12 @@ font-weight: normal;
 .animacionCard{
   display: none;
     }
+
+ /*pagina formulario*/
+ #main-container {
+  grid-template-columns: 100%; 
+
+}   
 }
   
 
@@ -1153,5 +1143,17 @@ font-weight: normal;
     .animacionCard{
       display: none;
     }
+    .containerForm,
+    .containerInfo {
+        background-color: #9AC8CD;
+         
+  }
+  #main-container {
+    grid-template-columns: 100%; 
+
+}
   }  
+
   
+
+

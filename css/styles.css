@@ -265,7 +265,6 @@ color:#9AC8CD;
     flex-direction: column;
     background: linear-gradient(135deg, rgb(15, 101, 159) 48%, rgb(0, 140, 240) 96%);
     margin: 0px 20px;
-    padding: 10 0px;
     border-radius: 5px;
     box-shadow: 5px 5px 10px rgb(0, 85, 135);
     text-align: center;
@@ -312,7 +311,6 @@ text-shadow: 0px 2px 2px #074173;
   bottom:0px;
   z-index: 0;
   pointer-events: auto;
-  
 }
 
 .animacionCard img{
@@ -407,7 +405,6 @@ text-shadow: 0px 2px 2px #074173;
   background-color: #0203E2;
   width: max-content;
   padding: 5px;
-  /* Agregamos la animación aquí */
   animation: suave 4s linear infinite;
   animation-delay: 10s;
 }
@@ -564,46 +561,45 @@ text-shadow: 0px 2px 2px #074173;
 
 .tituloGaleria {
   text-align: center;
-  position: relative;/*lo necsito para q se acomode verti y horiz*/
+  position: relative;
   width: 80%;
   margin: 50px auto;
 }
 body{
   background-color: #ecf4fb;
 }
-.tituloGaleria::before{/* pseudo-elemento,el ::beforecrea un elemento ficticio antes del contenido real */ 
+.tituloGaleria::before{ 
   content: "";
-  display: block;/*Establece el pseudo-elemento como un elemento de bloque (ocupa todo el ancho disponible)*/
+  display: block;
   width: 100%;
   height: 2px;
   position: absolute;
   background-color: black;
   top: 50%;
-  z-index: -1;/*Establece el índice Z del pseudo-elemento en -1.
-  Esto coloca el pseudo-elemento detrás del contenido real del */
-}
+  z-index: -1;
+  }
 .tituloGaleria span{
   background-color:#ecf4fb;
   padding: 0 15px;
 }
 .img-gallery {
-  width: 90%; /* Aumenta el ancho del contenedor de la galería de imágenes */
-  margin: 50px auto; /* Mantiene el margen automático para centrar el contenedor */
+  width: 90%; 
+  margin: 50px auto; 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 30px;
 }
 
 .img-gallery div {
-  width: 300px; /* Ancho fijo para el contenedor de la imagen */
-  height: 200px; /* Altura fija para el contenedor de la imagen */
-  overflow: hidden; /* Oculta cualquier parte de la imagen que exceda este contenedor */
+  width: 300px; 
+  height: 200px; 
+  overflow: hidden; 
 }
 
 .img-gallery img {
-  width: 100%; /* Ancho relativo al contenedor */
-  height: 100%; /* Altura relativa al contenedor */
-  object-fit: cover; /* Asegura que la imagen cubra el área sin perder proporción */
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
   cursor: pointer;
   transition: 1s;
 }
@@ -651,18 +647,16 @@ body{
   background-color: #ffffff;
 }
 
-
-
 #main-container {
   flex-grow: 1;
   display: grid;
   grid-template-columns: 70% 30%;
   gap: 40px;
-  max-width: 1200px; /* Ancho máximo del contenedor */
-  margin: 0 auto; /* Centrar el contenedor si es más peque q el ancho de la pantalla */
-  height: auto; /* Altura automática para q tome el espacio necesario */
+  max-width: 1200px; 
+  margin: 0 auto; 
+  height: auto; 
   box-sizing: border-box;
-  padding: 20px; /* Espacio alrededor del contenido princ. */
+  padding: 20px; 
 }
 
 .containerForm,
@@ -695,14 +689,14 @@ margin-top: 20px;
 }
 .containerForm input,
 .containerForm textarea {
-  width: calc(100% - 40px); /* Ajusta el ancho considerando el padding */
+  width: calc(100% - 40px); 
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 5px;
   box-sizing: border-box;
 }
 .containerForm button {
-  width: calc(100% - 40px); /* Ajusta el ancho considerando el padding */
+  width: calc(100% - 40px); 
   padding: 10px;
   border: none;
   border-radius: 5px;
@@ -715,9 +709,9 @@ margin-top: 20px;
   color:#003B95
 }
 .containerForm button {
-  width: 25%; /* Ajusta el ancho a un valor q prefie. */
+  width: 25%; 
   padding: 10px;
-  margin: 0 auto; /* Centra el botón horizontalmente */
+  margin: 0 auto; 
 } 
 
 #message {
@@ -725,6 +719,7 @@ margin-top: 20px;
 }
 
 /* Estilos para .containerInfo */
+
 .containerInfo {
   display: flex;
   flex-direction: column;
@@ -750,20 +745,17 @@ font-size: 16px;
 font-weight: normal;
 }
 
-/* ver más op. para las alertas*/
-
 .error-message{
   width: 30%;
-  /* float: left;  */
   background-color: bisque;
   color: rgb(125, 85, 211);
   border-radius: 0.5rem;
-  box-shadow: 0.25rem 0.25rem .5 darkblue;
+  box-shadow: 0.25rem 0.25rem 0.5px darkblue;
 }
 .success-animation {
   animation: fadeIn 3s ease-in-out forwards;
-  background-color: #074173; /* Fondo morado translúcido */
-  color: #e7ede7; /* Texto verde claro */
+  background-color: #074173; 
+  color: #e7ede7;
   padding: 20px;
   border-radius: 10px;
   text-align: center;
@@ -803,7 +795,6 @@ font-weight: normal;
   border:1px solid #9AC8CD;
   background-color: #9AC8CD;
   font-size: 20px;
-
 }
 
 .vuelosLink:hover {
@@ -811,7 +802,6 @@ font-weight: normal;
   color:#9AC8CD;
   font-size: 20px;
   outline: none;
-  
 }
 
 .destino {
@@ -842,8 +832,8 @@ font-weight: normal;
 .destino h2 {
   display: flex;
   justify-content: center;
-  /* color: white; */
 }
+
 /* QUIENES SOMOS? */
 
 .mainQS{
@@ -940,7 +930,7 @@ font-weight: normal;
   background-color: #f0f0f0;
   border: 1px solid #1A4FA0;
   border-radius: 10px;
-  }  
+}  
 
 .clienteCard img {
   width: 60%;
@@ -961,9 +951,7 @@ font-weight: normal;
   color: #1A4FA0;
 }
 
-
 /* Página de inicio de sesión */
-
 
 .iniciarContainer {
   display:flex;
@@ -1040,29 +1028,16 @@ font-weight: normal;
   text-decoration: underline;
 }
 
-/* @media screen and (max-width:400px){
-  .tituloGaleria{
-      text-decoration: underline;
-  }
-  .tituloGaleria::before{
-      display: none;
-  }
-  .tituloGaleria span{
-      padding: 0;
-  }
-} */
-
   /* RESPONSIVE--Mobile */
 
 @media (max-width: 576px) {
+
 .menu-icon {
   display: block;
     }
-/* Muestra el menú cuando el checkbox esté marcado */
 #menu-toggle:checked ~ .headernav ul {
   display: block;
     }
-/* Oculta el menú por defecto en pantallas pequeñas */
 .headernav ul{
   display: none;
   position: absolute;
@@ -1074,7 +1049,7 @@ font-weight: normal;
     } 
 .prev, .next,.dot {
   display: none;
-}
+    }
 .cardContenier {
   width: 100%;
   height: 100%;
@@ -1084,21 +1059,70 @@ font-weight: normal;
 .card{
   width: 90%;
   margin: 10px auto;
-}
+    }
 .animacionCard{
   display: none;
+    }
 }
-  }
-  .carrusel-container {
-    position: relative;
-    width: 30%;
-    margin: 0 auto;
-    overflow: hidden;
-  }
   
-  .clientes {
-    display: flex;
-    transition: transform 0.5s ease;
-  }
-  
+
+  /*RESPONSIVE--Table  */
+  @media (min-width: 577px) and (max-width:768px){
+    
+    .menu-icon {
+      display: block;
+      position: absolute;
+      left: 0px;
+      top:108px;
+    }
+
+    @keyframes movMenu {
+          0% {
+            left: -100%; 
+          }
+          100% {
+            left: 25%; 
+            transform: translateX(-50%); 
+          }
+    }
+
+
+    .headernav ul {
+      display: block;
+      position: absolute;
+      top: 150px;
+      animation: movMenu 2s ease forwards; /* 2s es la duración de la animación */
+    }
+    .headernav ul li{
+      margin: 10px 0px;
+    }
+    #menu-toggle:checked ~ .headernav ul {
+      display: block;
+    }
+    .headernav ul{
+      display: none;
+      position: absolute;
+      background-color: rgb(15, 101, 159);
+      width: 50%;
+    }
+    .mySlides {
+          width: 100%;
+    } 
+    .prev, .next,.dot {
+      display: none;
+    }
+    .cardContenier {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .card{
+      width: 90%;
+      margin: 10px auto;
+    }
+    .animacionCard{
+      display: none;
+    }
+  }  
   

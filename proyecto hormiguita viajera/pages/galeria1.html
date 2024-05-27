@@ -14,7 +14,7 @@
 <body>
     <header class="header">
         <div><a href="../index.html"><img  class="logoMain" src="../img/logoazul.png" alt="logo de una hormiga viajera"></a></div>
-        <input type="checkbox" id="menu-toggle" />
+        <input type="checkbox" id="menu-toggle">
         <label for="menu-toggle" class="menu-icon">&#9776;</label>  
         <nav class="headernav">
                 <ul>
@@ -28,6 +28,12 @@
             </nav>
     </header>
     <main>
+
+        <div class="ful-img" id="fulImgBox">
+            <img src="imgs/1.jpg" id="fulImg" alt="">
+            <span onclick="closeImg()">X</span>
+        </div>
+        
     <h1 class="title">“Destinos Encantadores: Vive Tu Historia”</h1>
 
     <div class="img-gallery">
@@ -50,17 +56,17 @@
 </main>
 <footer class="footer" >
     <div class="footerSuperior">
-        <span class="parrafoFooter">
+        <div class="parrafoFooter">
             <h3 class="titleFooter">Sobre nosotros</h3>
             <ul>
-                <li><a href="../pages/quienesSomos.html">Quienes somos</a></li>
+                <li><a href="./pages/quienesSomos.html">Quienes somos</a></li>
                 <li><a href="#">Agencias</a></li>
                 <li><a href="#">Trabaja con nosotros</a></li>
                 <li><a href="#">Afiliados</a></li>
                 <li><a href="#"></a></li>
             </ul>
-        </span>
-        <span class="parrafoFooter">
+        </div>
+        <div class="parrafoFooter">
             <h3 class="titleFooter">Planea tus viajes</h3>
             <ul>
                 <li><a href="#">Blog de viajes</a></li>
@@ -69,8 +75,8 @@
                 <li><a href="#">Turismo accesible</a></li>
                 <li><a href="#">Viajes de lujo</a></li>
             </ul>
-        </span>
-        <span class="parrafoFooter">
+        </div>
+        <div class="parrafoFooter">
             <h3 class="titleFooter">Informacion importante</h3>
             <ul>
                 <li><a href="#">Condiciones generales</a></li>
@@ -78,20 +84,20 @@
                 <li><a href="#">Centro de ayuda</a></li>
                 <li><a href="#">Politica de cookies</a></li>
             </ul>
-        </span>
+        </div>
         <div class="redesSociales">
             <h3 class="titleFooter">Seguinos en:</h3>
             <ul>
                 <li><a href="#"><i class="fa-brands fa-square-facebook iconosRedes"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-instagram iconosRedes"></a></i></li>
+                <li><a href="#"><i class="fa-brands fa-instagram iconosRedes"></i></a></li>
                 <li><a href="#"><i class="fa-brands fa-youtube iconosRedes"></i></a></li>
             </ul>
         </div>
     </div>
     <div class="footerInferior">
-        <p class="parrafoFooter">La Hormiguita viajera | todos los derechos reservados.</p>
+        <p class="parrafoFooter">La Hormiguita Viajera | todos los derechos reservados.</p>
     </div>
 </footer>
-    <script src="./script.js"></script>
+    <script src="../Js/galeria.js"></script>
 </body>
 </html>

@@ -768,6 +768,9 @@ font-weight: normal;
   border-radius: 10px;
   text-align: center;
   margin: 50px 5px;
+} 
+.mainSuccess{
+  height: 26vh;
 }
 
 @keyframes fadeIn {
@@ -1077,8 +1080,8 @@ font-weight: normal;
   display: none;
     }
 
- /*pagina formulario*/
- #main-container {
+/*pagina formulario*/
+#main-container {
   grid-template-columns: 100%; 
 
 }  
@@ -1098,9 +1101,7 @@ font-weight: normal;
       margin-bottom: 5px;
       outline: solid;
 }
-/* .vuelostitle {
-  font-size: 30px;
-} */
+
 .title{
   font-size: 30px;
 }
@@ -1138,14 +1139,39 @@ font-weight: normal;
 .destinosCard{
   width: 80%;
   margin: auto;
+  height: 100%;
 }
 .animacionImgDestino{
   display: none;
 }
-}
-  
 
-  /*RESPONSIVE--Table  */
+/* Responsive Tiposdeviajes */
+.tipos{
+  width: 80%;
+  margin: 20px auto;
+  height: 100%;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+.animacionImg{
+  display: none;
+}
+/* Responsive paginadeagracemiento */
+.success-animation{
+  width:80%;
+  margin: 50px auto;
+}
+
+.titleSuccess{
+  margin-bottom: 20px;
+}
+.mainSuccess{
+  height: 28vh;
+}
+}
+
+/* responsive Tablet */
+
   @media (min-width: 577px) and (max-width:768px){
     
     .menu-icon {
@@ -1264,8 +1290,29 @@ height: 400px;
 .animacionImgDestino{
   display: none;
 }
-  }  
+/* Responsive Tiposdeviajes */
+.tipos{
+  width: 80%;
+  margin: 20px auto;
+  height: 100%;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
 
-  
+.animacionImg{
+  display: none;
+} 
+/* Responsive paginadeagracemiento */
+.success-animation{
+  width:80%;
+  margin: 20px auto;
+  align-content: center;
+}
 
-
+.titleSuccess{
+  margin-bottom: auto;
+}
+.mainSuccess{
+  height: 46vh;
+}
+  }

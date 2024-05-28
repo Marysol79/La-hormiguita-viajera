@@ -634,6 +634,20 @@ body{
   width: auto;
   object-fit: cover;
 }
+@media (min-width: 577px) and (max-width: 768px) {
+  .img-gallery {
+    grid-template-columns: repeat(3, 1fr); 
+  }
+
+  .img-gallery div {
+    width: auto; 
+    height: auto; 
+  }
+
+  .title {
+    color: #0203E2; 
+}
+}
 
 /*Formulario*/
 
@@ -745,13 +759,7 @@ font-size: 16px;
 font-weight: normal;
 }
 
-.error-message{
-  width: 30%;
-  background-color: bisque;
-  color: rgb(125, 85, 211);
-  border-radius: 0.5rem;
-  box-shadow: 0.25rem 0.25rem 0.5px darkblue;
-}
+
 .success-animation {
   animation: fadeIn 3s ease-in-out forwards;
   background-color: #074173; 
@@ -766,6 +774,7 @@ font-weight: normal;
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
+
 
 /* VUELOS */
 .subtitulos {
@@ -1006,10 +1015,14 @@ font-weight: normal;
 }
 
 .error-message {
+  
   color: red;
   margin: 20px auto;
-  width: 15rem;
+  width: max-content;
   padding: 0px 2px;
+  background-color: bisque;
+  border-radius: 0.5rem; 
+  display:inline-block ;
 }
 
 #loginForm a, #registerForm a {
@@ -1063,6 +1076,56 @@ font-weight: normal;
 .animacionCard{
   display: none;
     }
+
+ /*pagina formulario*/
+ #main-container {
+  grid-template-columns: 100%; 
+
+}  
+/* Responsive vuelos */
+.destino {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.destino img {
+      width: 100%;
+      margin: auto;
+    }
+.vuelosLink {
+      width: 60%;
+      font-size: 10px;
+      margin-bottom: 5px;
+      outline: solid;
+}
+.vuelostitle {
+  font-size: 30px;
+}
+
+/* Responsive quiénes somos */
+.miembros {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.miembro-equipo {
+  margin-bottom: 20px;
+  width: 80%;
+}
+
+.miembro-equipo img {
+  width: 100%;
+}
+
+.miembro-equipo p h4 h3 {
+  font-size: 5px;
+}
+
+.mapa iframe {
+  width: 100%;
+  height: 300px;
+} 
 }
   
 
@@ -1124,5 +1187,54 @@ font-weight: normal;
     .animacionCard{
       display: none;
     }
+    .containerForm,
+    .containerInfo {
+        background-color: #9AC8CD;
+         
+  }
+  #main-container {
+    grid-template-columns: 100%; 
+
+}
+/* Responsive vuelos */
+.destino {
+  flex-direction: column;
+}
+
+.destino img {
+  margin: auto;
+  width: 100%;
+}
+
+.vuelosLink {
+  width: 20%;
+  font-size: 10px;
+  margin-bottom: 5px;
+}
+
+/* Responsive quiénes somos */
+.miembros {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-around;
+}
+
+.miembro-equipo {
+width: 45%;
+margin: auto;
+}
+
+.miembro-equipo img {
+width: 100%;
+}
+
+.mapa iframe {
+width: 100%;
+height: 400px;
+}
   }  
+
   
+
+

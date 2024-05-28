@@ -16,7 +16,7 @@
 <body class="bodyForm">
     <header class="header">
         <div><a href="../index.html"><img  class="logoMain" src="../img/logoazul.png" alt="logo de una hormiga viajera"></a></div>
-        <input type="checkbox" id="menu-toggle" />
+        <input type="checkbox" id="menu-toggle">
         <label for="menu-toggle" class="menu-icon">&#9776;</label>  
         <nav class="headernav">
                 <ul>
@@ -44,7 +44,7 @@
                     <input type="text" id="lastName" name="lastName" placeholder="Escribe tu apellido">
                     <span id="errorApellido" class="error-message"></span>
                     
-                    <label for="email">Email:</label>
+                    <label for="email">Email(*):</label>
                     <input type="text" id="email" name="email" placeholder="Ingrese su email">
                     <span id="errorEmail" class="error-message"></span>
                     
@@ -70,7 +70,7 @@
         </select>
         <br>
 
-        <label for="message">Consulta:</label>
+        <label for="message">Consulta(*):</label>
     <textarea id="message" name="message" rows="4" placeholder="Escribe tu consulta"></textarea>
             <span id="errorMessage" class="error-message"></span>
             <p>(*) Campos obligatorios.</p>
@@ -78,9 +78,7 @@
             <span class="glyphicon glyphicon-send"></span> Enviar 
         </button>
     </form>
-
-
-    <div id="error" style="color: red;"></div>
+ 
 </div>
 
 <div class="containerInfo">
@@ -88,7 +86,7 @@
         <h2><i class="fa-solid fa-location-dot"></i> Direccion: <br> Av. Córdoba 8701, C1054 Cdad. Autónoma de Buenos Aires </h2>
     </div>
     <div class="column">
-        <h2><i class="fa-solid fa-phone"></i> Teléfono <p>011-4254-8027</p></h2>
+        <h2><i class="fa-solid fa-phone"></i> Teléfono <span>011-4254-8027</span></h2>
     </div>
 
     <div class="column">
@@ -105,17 +103,17 @@
 </main>
 <footer class="footer" >
     <div class="footerSuperior">
-        <span class="parrafoFooter">
+        <div class="parrafoFooter">
             <h3 class="titleFooter">Sobre nosotros</h3>
             <ul>
-                <li><a href="./quienesSomos.html">Quienes somos</a></li>
+                <li><a href="./pages/quienesSomos.html">Quienes somos</a></li>
                 <li><a href="#">Agencias</a></li>
                 <li><a href="#">Trabaja con nosotros</a></li>
                 <li><a href="#">Afiliados</a></li>
                 <li><a href="#"></a></li>
             </ul>
-        </span>
-        <span class="parrafoFooter">
+        </div>
+        <div class="parrafoFooter">
             <h3 class="titleFooter">Planea tus viajes</h3>
             <ul>
                 <li><a href="#">Blog de viajes</a></li>
@@ -124,8 +122,8 @@
                 <li><a href="#">Turismo accesible</a></li>
                 <li><a href="#">Viajes de lujo</a></li>
             </ul>
-        </span>
-        <span class="parrafoFooter">
+        </div>
+        <div class="parrafoFooter">
             <h3 class="titleFooter">Informacion importante</h3>
             <ul>
                 <li><a href="#">Condiciones generales</a></li>
@@ -133,20 +131,21 @@
                 <li><a href="#">Centro de ayuda</a></li>
                 <li><a href="#">Politica de cookies</a></li>
             </ul>
-        </span>
+        </div>
         <div class="redesSociales">
             <h3 class="titleFooter">Seguinos en:</h3>
             <ul>
                 <li><a href="#"><i class="fa-brands fa-square-facebook iconosRedes"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-instagram iconosRedes"></a></i></li>
+                <li><a href="#"><i class="fa-brands fa-instagram iconosRedes"></i></a></li>
                 <li><a href="#"><i class="fa-brands fa-youtube iconosRedes"></i></a></li>
             </ul>
         </div>
     </div>
     <div class="footerInferior">
-        <p class="parrafoFooter">La Hormiga viajera | todos los derechos reservados.</p>
+        <p class="parrafoFooter">La Hormiguita Viajera | todos los derechos reservados.</p>
     </div>
 </footer>
     <script src="../Js/formulario.js"></script>
 </body>
 </html>
+

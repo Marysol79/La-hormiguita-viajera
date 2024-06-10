@@ -656,7 +656,7 @@ body{
   flex-direction: column;
   min-height: 100vh;
   margin: 0;
-  background-image: url(../img/i1.jpg);
+  background-image: url(../img/i1.webp);
   background-size: cover;
   background-color: #ffffff;
 }

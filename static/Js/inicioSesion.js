@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const password = document.getElementById('password').value;
 
         // Simulación de autenticación
-        if (username === 'usuario' && password === 'contraseña') {
+        if (username === 'usuario' && password === 'contrasena') {
             alert('Inicio de sesión exitoso');
             // Redirigir a otra página o realizar otra acción
         } else {

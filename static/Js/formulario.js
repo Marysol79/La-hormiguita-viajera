@@ -36,12 +36,4 @@ function validacion() {
       return false;
   }
   
-  // Si todas las validaciones son correctas, ejecuta la función de envío exitoso
-  envioExitoso();
-  return false; // Esto evita que el formulario se envíe realmente
-}
-
-function envioExitoso() {
-  // Abrir una nueva pestaña con la página de agradecimiento
-  window.open('paginaDeAgradecimiento.html', '_blank');
 }

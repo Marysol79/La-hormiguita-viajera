@@ -4,8 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> Galería | La hormiga viajera </title>
-        <link rel="icon" type="image/x-icon" href="../img/logoazul.png">
-        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="icon" type="image/x-icon" href="../static/img/logoazul.png">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
@@ -13,45 +13,45 @@
     </head>
 <body>
     <header class="header">
-        <div><a href="../index.html"><img  class="logoMain" src="../img/logoazul.png" alt="logo de una hormiga viajera"></a></div>
+        <div><a href="{{ url_for('Index') }}"><img  class="logoMain" src="../static/img/logoazul.png" alt="logo de una hormiga viajera"></a></div>
         <input type="checkbox" id="menu-toggle">
         <label for="menu-toggle" class="menu-icon">&#9776;</label>  
         <nav class="headernav">
                 <ul>
-                    <li><a class="linkNav" href="../index.html">HOME</a></li>
-                    <li><a class="linkNav" href="../pages/destinos.html">DESTINOS</a></li>
-                    <li><a class="linkNav" href="../pages/vuelos.html">VUELOS</a></li>
-                    <li><a class="linkNav" href="../pages/tiposdeviajes.html">TIPOS DE VIAJES</a></li>
-                    <li><a class="linkNav" href="../pages/quienesSomos.html">¿QUIENES SOMOS?</a></li>
-                    <li><a class="linkNav" href="../pages/contacto.html">CONTACTOS</a></li>
+                    <li><a class="linkNav" href="{{ url_for('Index') }}">HOME</a></li>
+                    <li><a class="linkNav" href="{{ url_for('destinos')}}">DESTINOS</a></li>
+                    <li><a class="linkNav" href="{{ url_for('vuelos')}}">VUELOS</a></li>
+                    <li><a class="linkNav" href="{{ url_for('tiposdeviajes')}}">TIPOS DE VIAJES</a></li>
+                    <li><a class="linkNav" href="{{ url_for('quienessomos') }}">¿QUIENES SOMOS?</a></li>
+                    <li><a class="linkNav" href="{{ url_for('formularioConsultas') }}">CONTACTOS</a></li>
                 </ul> 
             </nav>
     </header>
     <main>
 
         <div class="ful-img" id="fulImgBox">
-            <img src="../img/1.webp" id="fulImg" alt="">
+            <img src="../static/img/1.webp" id="fulImg" alt="">
             <span onclick="closeImg()">X</span>
         </div>
         
     <h1 class="title">“Destinos Encantadores: Vive Tu Historia”</h1>
 
     <div class="img-gallery">
-        <img src="../img/1.webp" onclick="openFulImg(this.src)" alt="Amigas de vacaciones">
-        <img src="../img/2.webp" onclick="openFulImg(this.src)" alt="Flia de vacaciones">
-        <img src="../img/3.webp" onclick="openFulImg(this.src)" alt="Mujer feliz acampando en montaña">
-        <img src="../img/4.webp" onclick="openFulImg(this.src)" alt="Flia en playa">
-        <img src="../img/5.webp" onclick="openFulImg(this.src)" alt="Sr con deidades Indu">
-        <img src="../img/6.webp" onclick="openFulImg(this.src)" alt="Amigas en cabaña playa">
-        <img src="../img/7.webp" onclick="openFulImg(this.src)" alt="Pareja sacandose foto">
-        <img src="../img/8.webp" onclick="openFulImg(this.src)" alt="Flia sobre elefante">
-        <img src="../img/9.webp" onclick="openFulImg(this.src)" alt="Amigas en la playa">
-        <img src="../img/10.webp" onclick="openFulImg(this.src)" alt="Amigos en embarcación">
-        <img src="../img/11.webp" onclick="openFulImg(this.src)" alt="Amigas en montaña">
-        <img src="../img/12.webp" onclick="openFulImg(this.src)" alt="Mujeres en Japon">
-        <img src="../img/13.webp" onclick="openFulImg(this.src)" alt="amigos en pileta">
-        <img src="../img/14.webp" onclick="openFulImg(this.src)" alt="Pareja besandose">
-        <img src="../img/15.webp" onclick="openFulImg(this.src)" alt="Mujer con paragua">
+        <img src="../static/img/1.webp" onclick="openFulImg(this.src)" alt="Amigas de vacaciones">
+        <img src="../static/img/2.webp" onclick="openFulImg(this.src)" alt="Flia de vacaciones">
+        <img src="../static/img/3.webp" onclick="openFulImg(this.src)" alt="Mujer feliz acampando en montaña">
+        <img src="../static/img/4.webp" onclick="openFulImg(this.src)" alt="Flia en playa">
+        <img src="../static/img/5.webp" onclick="openFulImg(this.src)" alt="Sr con deidades Indu">
+        <img src="../static/img/6.webp" onclick="openFulImg(this.src)" alt="Amigas en cabaña playa">
+        <img src="../static/img/7.webp" onclick="openFulImg(this.src)" alt="Pareja sacandose foto">
+        <img src="../static/img/8.webp" onclick="openFulImg(this.src)" alt="Flia sobre elefante">
+        <img src="../static/img/9.webp" onclick="openFulImg(this.src)" alt="Amigas en la playa">
+        <img src="../static/img/10.webp" onclick="openFulImg(this.src)" alt="Amigos en embarcación">
+        <img src="../static/img/11.webp" onclick="openFulImg(this.src)" alt="Amigas en montaña">
+        <img src="../static/img/12.webp" onclick="openFulImg(this.src)" alt="Mujeres en Japon">
+        <img src="../static/img/13.webp" onclick="openFulImg(this.src)" alt="amigos en pileta">
+        <img src="../static/img/14.webp" onclick="openFulImg(this.src)" alt="Pareja besandose">
+        <img src="../static/img/15.webp" onclick="openFulImg(this.src)" alt="Mujer con paragua">
     </div>
 </main>
 <footer class="footer" >
@@ -59,7 +59,7 @@
         <div class="parrafoFooter">
             <h3 class="titleFooter">Sobre nosotros</h3>
             <ul>
-                <li><a href="./pages/quienesSomos.html">Quienes somos</a></li>
+                <li><a href="{{ url_for('quienessomos') }}">Quienes somos</a></li>
                 <li><a href="#">Agencias</a></li>
                 <li><a href="#">Trabaja con nosotros</a></li>
                 <li><a href="#">Afiliados</a></li>
@@ -98,6 +98,6 @@
         <p class="parrafoFooter">La Hormiguita Viajera | todos los derechos reservados.</p>
     </div>
 </footer>
-    <script src="../Js/galeria.js"></script>
+    <script src="../static/Js/galeria.js"></script>
 </body>
 </html>

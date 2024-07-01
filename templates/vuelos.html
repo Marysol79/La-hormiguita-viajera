@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vuelos | La hormiga voladora</title>
-    <link rel="icon" type="image/x-icon" href="../img/logoazul.png">
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" type="image/x-icon" href="../static/img/logoazul.png">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
     <script src="https://kit.fontawesome.com/f3cd9eb1cb.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,24 +13,24 @@
 </head>
 <body>
     <header class="header">
-        <div><a href="../index.html"><img  class="logoMain" src="../img/logoazul.png" alt="logo de una hormiga viajera"></a></div>
+        <div><a href="{{ url_for('Index') }}"><img  class="logoMain" src="../static/img/logoazul.png" alt="logo de una hormiga viajera"></a></div>
         <input type="checkbox" id="menu-toggle">
         <label for="menu-toggle" class="menu-icon">&#9776;</label> 
         <nav class="headernav">
                 <ul>
-                    <li><a class="linkNav" href="../index.html">HOME</a></li>
-                    <li><a class="linkNav" href="../pages/destinos.html">DESTINOS</a></li>
-                    <li><a class="linkNav" href="../pages/tiposdeviajes.html">TIPOS DE VIAJE</a></li>
-                    <li><a class="linkNav" href="../pages/galeria1.html">GALERIA DE FOTOS</a></li>
-                    <li><a class="linkNav" href="../pages/quienesSomos.html">¿QUIENES SOMOS?</a></li>
-                    <li><a class="linkNav" href="../pages/contacto.html">CONTACTO</a></li>
+                    <li><a class="linkNav" href="{{ url_for('Index') }}">HOME</a></li>
+                    <li><a class="linkNav" href="{{ url_for('destinos')}}">DESTINOS</a></li>
+                    <li><a class="linkNav" href="{{ url_for('tiposdeviajes')}}">TIPOS DE VIAJE</a></li>
+                    <li><a class="linkNav" href="{{ url_for('galeria') }}">GALERIA DE FOTOS</a></li>
+                    <li><a class="linkNav" href="{{ url_for('quienessomos') }}">¿QUIENES SOMOS?</a></li>
+                    <li><a class="linkNav" href="{{ url_for('formularioConsultas') }}">CONTACTO</a></li>
                 </ul> 
             </nav>
     </header>
     <main>
         <h1 class="title vuelostitle">Explorá nuestros destinos</h1>
         <div class="destino">
-            <img src="../img/imagen1.webp" alt="España">
+            <img src="../static/img/imagen1.webp" alt="España">
             <div>
                 <h2 class="subtitulos">España</h2>
                 <p class="vuelosParrafo">
@@ -48,11 +48,11 @@
                 <a class="vuelosLink" href="#">Ver más</a>
             </div>
             <div>
-                <img src="../img/imagen2.webp" alt="Tailandia">
+                <img src="../static/img/imagen2.webp" alt="Tailandia">
             </div>
         </div>
         <div class="destino">
-            <img src="../img/imagen3.webp" alt="Rusia">
+            <img src="../static/img/imagen3.webp" alt="Rusia">
             <div>
                 <h2 class="subtitulos">Rusia</h2>
                 <p class="vuelosParrafo">
@@ -67,10 +67,10 @@
                 <p class="vuelosParrafo">
                     Japón es una fusión única de tradición y modernidad que fascina a los visitantes con su mezcla de antiguas costumbres y tecnología de vanguardia. Desde los tranquilos templos zen de Kyoto hasta los rascacielos relucientes de Tokio, Japón ofrece una experiencia de viaje inolvidable. La exquisita gastronomía japonesa, que incluye sushi, ramen y tempura, deleita a los paladares de los viajeros, mientras que las festividades tradicionales como el Hanami (observación de flores de cerezo) y el Matsuri (festivales) muestran la rica cultura del país. Con su hospitalidad cálida y paisajes impresionantes que van desde montañas nevadas hasta playas tropicales, Japón promete emocionar y cautivar a cada visitante.
                 </p>
-                <a class="vuelosLink" href="japon.html">Ver más</a>
+                <a class="vuelosLink" href="#">Ver más</a>
             </div>
             <div>
-                <img src="../img/imagen4.webp" alt="Japon">
+                <img src="../static/img/imagen4.webp" alt="Japon">
             </div>
         </div> 
     </main>
@@ -79,7 +79,7 @@
             <div class="parrafoFooter">
                 <h3 class="titleFooter">Sobre nosotros</h3>
                 <ul>
-                    <li><a href="../pages/quienesSomos.html">Quienes somos</a></li>
+                    <li><a href="{{ url_for('quienessomos') }}">Quienes somos</a></li>
                     <li><a href="#">Agencias</a></li>
                     <li><a href="#">Trabaja con nosotros</a></li>
                     <li><a href="#">Afiliados</a></li>

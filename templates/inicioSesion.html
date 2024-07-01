@@ -4,29 +4,27 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Iniciar Sesión | La hormiguita Viajera</title>
-        <link rel="icon" type="image/x-icon" href="../img/logoazul.png">
-        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="icon" type="image/x-icon" href="../static/img/logoazul.png">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./css/partials/glide.core.min.css">
-        <link rel="stylesheet" href="./css/partials/glide.theme.min.css">
         <script src="https://kit.fontawesome.com/f3cd9eb1cb.js" crossorigin="anonymous"></script>
     </head>
 <body>
     <header class="header">
-        <div><a href="../index.html"><img  class="logoMain" src="../img/logoazul.png" alt="logo de una hormiga viajera"></a></div>
+        <div><a href="{{ url_for('Index') }}"><img  class="logoMain" src="../static/img/logoazul.png" alt="logo de una hormiga viajera"></a></div>
         <input type="checkbox" id="menu-toggle" />
         <label for="menu-toggle" class="menu-icon">&#9776;</label>   
         <nav class="headernav">
                 <ul>
-                    <li><a class="linkNav" href="../index.html">HOME</a></li>
-                    <li><a class="linkNav" href="../pages/destinos.html">DESTINOS</a></li>
-                    <li><a class="linkNav" href="../pages/vuelos.html">VUELOS</a></li>
-                    <li><a class="linkNav" href="../pages/tiposdeviajes.html">TIPOS DE VIAJES</a></li>
-                    <li><a class="linkNav" href="../pages/galeria1.html">GALERIA DE FOTOS</a></li>
-                    <li><a class="linkNav" href="../pages/quienesSomos.html">¿QUIENES SOMOS?</a></li>
-                    <li><a class="linkNav" href="../pages/contacto.html">CONTACTOS</a></li>
+                    <li><a class="linkNav" href="{{ url_for('Index') }}">HOME</a></li>
+                    <li><a class="linkNav" href="{{ url_for('destinos')}}">DESTINOS</a></li>
+                    <li><a class="linkNav" href="{{ url_for('vuelos')}}">VUELOS</a></li>
+                    <li><a class="linkNav" href="{{ url_for('tiposdeviajes')}}">TIPOS DE VIAJES</a></li>
+                    <li><a class="linkNav" href="{{ url_for('galeria') }}">GALERIA DE FOTOS</a></li>
+                    <li><a class="linkNav" href="{{ url_for('quienessomos') }}">¿QUIENES SOMOS?</a></li>
+                    <li><a class="linkNav" href="{{ url_for('formularioConsultas') }}">CONTACTOS</a></li>
                 </ul> 
             </nav>
     </header>
@@ -69,7 +67,7 @@
             <span class="parrafoFooter">
                 <h3 class="titleFooter">Sobre nosotros</h3>
                 <ul>
-                    <li><a href="./quienesSomos.html">Quienes somos</a></li>
+                    <li><a href="{{ url_for('quienessomos') }}">Quienes somos</a></li>
                     <li><a href="#">Agencias</a></li>
                     <li><a href="#">Trabaja con nosotros</a></li>
                     <li><a href="#">Afiliados</a></li>
@@ -108,6 +106,6 @@
             <p class="parrafoFooter">La Hormiguita viajera | todos los derechos reservados.</p>
         </div>
     </footer>
-    <script src="../Js/inicioSesion.js"></script>
+    <script src="../static/Js/inicioSesion.js"></script>
 </body>
 </html>

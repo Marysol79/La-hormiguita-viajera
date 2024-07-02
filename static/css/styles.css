@@ -965,119 +965,44 @@ font-weight: normal;
 
 /* Página de inicio de sesión */
 
-.iniciarContainer {
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 50px;
-}
-
-.iniciarForm-container {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 300px;
-  text-align: center;
-  display: none;
-}
-
-.iniciarForm-container.active {
-  display: block;
-}
-
-#loginForm label, #registerForm label {
-  display: block;
-  margin-top: 10px;
-  text-align: left;
-}
-
-#loginForm input, #registerForm input {
-  width: 100%;
-  padding: 8px;
-  margin-top: 5px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-#loginForm button, #registerForm button {
-  width: 100%;
-  padding: 10px;
-  margin-top: 20px;
-  background-color: #003B95;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-#loginForm button:hover, #registerForm button:hover {
-  background-color: #9AC8CD;
-  color:#003B95
-}
-
-.error-message {
-  
-  color: red;
-  margin: 20px auto;
-  width: max-content;
-  padding: 0px 2px;
-  background-color: bisque;
-  border-radius: 0.5rem; 
-  display:inline-block ;
-}
-
-#loginForm a, #registerForm a {
-  color: #003B95;
-  cursor: pointer;
-  text-decoration: none;
-  display: inline-block;
-}
-
-#goToRegister, #goToLogin {
-  color: #003B95;
-}
-
-#goToRegister:hover, #goToLogin:hover {
-  color: #003B95;
-  text-decoration: underline;
-}
-
-/* paginas consultas */
-.consultasMain{
+.consultasMain {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
 }
-.contenedorConsultas{
+
+.contenedorConsultas {
   border: 2px solid black;
-  width: max-content;
+  width: 100%;
   padding: 20px;
   margin: auto;
-  width: 95%
-
+  overflow-x: auto; /* Asegura que la tabla sea responsiva */
 }
-.contenedorConsultas thead td{
-  font-size: 30px;
+
+.contenedorConsultas table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.contenedorConsultas thead td {
+  font-size: 20px;
   color: blue;
   text-align: center;
   padding: 10px;
   border-bottom: 1px solid black;
-
+  word-wrap: break-word;
 }
-.contenedorConsultas tbody td{
-  font-size: 20px;
+
+.contenedorConsultas tbody td {
+  font-size: 16px;
   text-align: center;
-  margin: 10px 5px;
-  padding: 5px;
-
+  padding: 10px;
+  word-wrap: break-word;
 }
 
-
-.editbtn , .deletebtn{
+.editbtn, .deletebtn {
   background-color: blue;
   color: white;
   padding: 10px;
@@ -1086,55 +1011,54 @@ font-weight: normal;
   border-radius: 5px;
 }
 
-.deletebtn{
+.deletebtn {
   background-color: red;
 }
-.deletebtn:hover{
+
+.deletebtn:hover, .editbtn:hover {
   text-decoration: underline;
 }
-.editbtn:hover{
-  text-decoration: underline;
 
-} 
-
-.parrafoBackInicio{
+.parrafoBackInicio {
   font-size: 40px;
-  margin:20px auto;
+  margin: 20px auto;
   text-align: center;
   padding: 0px 20px;
   color: #1A4FA0;
 }
 
-.backInicio{
+.backInicio {
   text-decoration: none;
   font-weight: 800;
   color: #1A4FA0;
 }
 
-.backInicio:hover{
+.backInicio:hover {
   text-decoration: underline;
 }
 
-.messageFlash{
+.messageFlash {
   background-color: #cee3dc;
   font-size: 30px;
   width: max-content;
-  margin: 5px auto ;
+  margin: 5px auto;
   padding: 10px;
   border-radius: 5px;
   color: #8ca69d;
   border: 2px solid #8fa89f;
 }
-.btn-close{
+
+.btn-close {
   font-size: 30px;
   width: max-content;
   border-radius: 5px;
-
 }
 
 .hidden {
   display: none;
 }
+
+
 
 
 /* pagina editar consulta */
